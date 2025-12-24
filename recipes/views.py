@@ -3,7 +3,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse('Wello World')
+    return render(request, 'recipes/home.html')
 
 def contato(request):
     return HttpResponse('Contato')
